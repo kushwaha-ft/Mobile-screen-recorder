@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Screen Recorder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container d-flex flex-column align-items-center justify-content-center vh-100 text-center">
+    <h1 class="mb-4">📱 Mobile Screen Recorder</h1>
+
+    <div id="status" class="mb-3 text-muted">Not Recording</div>
+    <div id="timer" class="display-4 mb-4">00:00</div>
+
+    <div>
+      <button id="startBtn" class="btn btn-success me-2">Start Recording</button>
+      <button id="stopBtn" class="btn btn-danger me-2" disabled>Stop Recording</button>
+      <a id="downloadBtn" class="btn btn-primary" style="display: none;" download="recording.webm">Download</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
